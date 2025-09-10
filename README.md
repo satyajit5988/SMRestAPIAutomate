@@ -1,7 +1,7 @@
 # Python Packages Required To Run The Tests -
 
-pip install requests
-pip install -U requests (Update request package)
+#pip install requests
+#pip install -U requests (Update request package)
 pip install json
 pip install jsonpath
 pip install pytest

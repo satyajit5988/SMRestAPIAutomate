@@ -82,7 +82,7 @@ Caused by: java.net.BindException: Address already in use: bind
         at Jenkins Main ClassLoader//org.eclipse.jetty.server.ServerConnector.openAcceptChannel(ServerConnector.java:344)
         ... 21 more
 
-# Option 1: Find and Stop the Process Using Port 8080.
+Option 1: Find and Stop the Process Using Port 8080.
 
     On Windows:
     Open Command Prompt as Administrator.
@@ -101,7 +101,7 @@ Caused by: java.net.BindException: Address already in use: bind
     Stop it (if safe to do so):
     taskkill /PID 1234 /F
 
-# Option 2: Run jenkins on a different port number.
+Option 2: Run jenkins on a different port number.
     In this case just try starting your jenkins on a different port. Use below command for the same:
 
     java -jar jenkins.war -httpPort=<port-number>

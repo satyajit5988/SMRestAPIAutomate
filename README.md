@@ -1,17 +1,17 @@
 # Python Packages Required To Run The Tests -
 
-#pip install requests
-#pip install -U requests (Update request package)
-pip install json
-pip install jsonpath
-pip install pytest
-pip install pytest-xdist
-pip install pytest-html
-pip install pytest-json-report
-pip install pytest-cov
-pip install openpyxl
-pip install allure-pytest (For generating JSON reports - New one)
-pip install pytest-adapter-allure(For generating XML reports - old one)
+1) pip install requests
+2) pip install -U requests (Update request package)
+3) pip install json
+4) pip install jsonpath
+5) pip install pytest
+6) pip install pytest-xdist
+7) pip install pytest-html
+8) pip install pytest-json-report
+9) pip install pytest-cov
+10) pip install openpyxl
+11) pip install allure-pytest (For generating JSON reports - New one)
+12) pip install pytest-adapter-allure(For generating XML reports - old one)
 
 # Setting Up Jenkins On Local Machine -
 

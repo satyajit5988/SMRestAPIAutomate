@@ -102,6 +102,9 @@ Caused by: java.net.BindException: Address already in use: bind
     taskkill /PID 1234 /F
 
 # Option 2: Run jenkins on a different port number.
+    In this case just try starting your jenkins on a different port. Use below command for the same:
+
+    java -jar jenkins.war -httpPort=<port-number>
 
 # Setting Up Allure For Generating Report -
 

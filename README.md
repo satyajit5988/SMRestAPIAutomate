@@ -1,4 +1,4 @@
-# Python Packages Setup -
+# Python Packages Required To Run The Tests -
 
 pip install requests
 pip install -U requests (Update request package)
@@ -13,10 +13,10 @@ pip install openpyxl
 pip install allure-pytest (For generating JSON reports - New one)
 pip install pytest-adapter-allure(For generating XML reports - old one)
 
-# Jenkins Setup -
+# Setting Up Jenkins On Local Machine -
 
-1) Download Java
-2) Download WAR file for Jenkins
+1) Download Java on your local machine.
+2) Download WAR file for Jenkins.
 3) Go to the WAR file location, launch command prompt and run in command prompt = java -jar jenkins.war -httpPort=9090 (By default port is 8080)
 
 4) Look for initialPassord in folder - C:\Users\User\.jenkins\secrets\initialAdminpassword
@@ -45,7 +45,7 @@ pip install pytest-adapter-allure(For generating XML reports - old one)
        2) Download allure command line from google > zip file (https://allurereport.org/docs/install-for-windows/)
        3) Manage Jenkins > Tools > At the bottom add Allure and its path from your system
 
-# Jenkins Troubleshooting - If jenkins is showing error as while starting  -
+# Troubleshooting - If Jenkins is showing error as below while starting  -
 
 2025-09-09 07:40:50.078+0000 [id=1]     INFO    winstone.Logger#logInternal: Jetty shutdown successfully
 java.io.IOException: Failed to start Jetty
@@ -82,7 +82,7 @@ Caused by: java.net.BindException: Address already in use: bind
         at Jenkins Main ClassLoader//org.eclipse.jetty.server.ServerConnector.openAcceptChannel(ServerConnector.java:344)
         ... 21 more
 
-# Option 1: Find and Stop the Process Using Port 8080 - You can find and stop the process currently using port 8080.
+# Option 1: Find and Stop the Process Using Port 8080.
 
     On Windows:
     Open Command Prompt as Administrator.
@@ -103,7 +103,7 @@ Caused by: java.net.BindException: Address already in use: bind
 
 # Option 2: Run jenkins on a different port number.
 
-# Allure Setup -
+# Setting Up Allure For Generating Report -
 
 1) Check for Java = java --version
 2) Download node JS 64 bit version from google, executable with msi version should be downloaded, complete the setup

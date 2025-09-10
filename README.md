@@ -13,13 +13,34 @@
 11) pip install allure-pytest (For generating JSON reports - New one)
 12) pip install pytest-adapter-allure(For generating XML reports - old one)
 
+# Setting Up GIT For Source Code Management -
+
+1) Create a remote repository by login to GitHub on chrome. 
+   Note the HTTPS URl to connect to it - git@github.com:XYZ/ABC.git
+
+2) Now go to the folder where all your automation code is written.
+   Create a local repository by initializing git = git init
+
+3) Check status of untracked file by running below command - 
+   git status
+4) Add these files to staging area - 
+   git add <filename> or git add .
+5) Commit these changes -
+   git commit -m "Updating project Files"
+6) Then connect the local and remote repository by running the command - 
+   git remote add origin git@github.com:XYZ/ABC.git
+7) Set the branch to which code is to be pushed - 
+   git branch -M main
+8) Finally push your code using below command - 
+   git push -u origin main
+
 # Setting Up Jenkins On Local Machine -
 
 1) Download Java on your local machine.
 2) Download WAR file for Jenkins.
 3) Go to the WAR file location, launch command prompt and run in command prompt = java -jar jenkins.war -httpPort=9090 (By default port is 8080)
 
-4) Look for initialPassord in folder - C:\Users\User\.jenkins\secrets\initialAdminpassword
+4) Look for initialPassword in folder - C:\Users\User\.jenkins\secrets\initialAdminpassword
    Config file is there to change jenkins config.
 
 5) Once all plugins are downloaded and installed, user will get screen to create username / password.
@@ -38,7 +59,7 @@
         1) Set Python path - 
            Python_Home - C:\Users\User\AppData\Local\Programs\Python\Python313;C:\Users\User\AppData\Local\Programs\Python\Python313\Scripts
            Python_Scripts - C:\Users\User\AppData\Local\Programs\Python\Python313\Scripts
-     And add Chrome, Gecho and Edge driver to Python script folder - C:\Users\User\AppData\Local\Programs\Python\Python313\Scripts
+     And add Chrome, Gecko and Edge driver to Python script folder - C:\Users\User\AppData\Local\Programs\Python\Python313\Scripts
 
     c) Setup Allure reporting on jenkins - 
        1) Manage Jenkins > plugins > allure
@@ -109,8 +130,8 @@ Option 2: Run jenkins on a different port number.
 # Setting Up Allure For Generating Report -
 
 1) Check for Java = java --version
-2) Download node JS 64 bit version from google, executable with msi version should be downloaded, complete the setup
-3) Install allure command line tool by redirecting to C:\Windows\System32\cmd.exe (Where Node Js is installed) launch cmd and fire the below command =
+2) Download Node.js 64 bit version from Google, executable with msi version should be downloaded, complete the setup.
+3) Install allure command line tool by redirecting to C:\Windows\System32\cmd.exe (Where Node.js is installed) launch cmd and fire the below command -
    npm install -g allure-commandline --save-dev
 
 4) To be sure, type in allure and see if help option are displayed.

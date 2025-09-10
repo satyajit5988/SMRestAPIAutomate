@@ -1,0 +1,9 @@
+pip install requests
+pip install jsonpath
+pip install pytest
+pip install pytest-xdist
+pip install pytest-html
+pip install pytest-json-report
+pip install pytest-cov
+pip install openpyxl
+pip install allure-pytest

@@ -1,0 +1,39 @@
+{
+  "Permanent_Address": {
+    "House_Number": "300",
+    "City": "Pune",
+    "State": "Maharashtra",
+    "Country": "India",
+    "PhoneNumber": [
+      {
+        "Std_Code": "0234",
+        "Home": "341359",
+        "Mobile": "9988776655"
+      },
+      {
+        "Std_Code": "0235",
+        "Home": "641359",
+        "Mobile": "8899776655"
+      }
+    ]
+  },
+  "Current_Address": {
+    "House_Number": "300",
+    "City": "Pune",
+    "State": "Maharashtra",
+    "Country": "India",
+    "PhoneNumber": [
+      {
+        "Std_Code": "0234",
+        "Home": "341359",
+        "Mobile": "9988776655"
+      },
+      {
+        "Std_Code": "0235",
+        "Home": "641359",
+        "Mobile": "8899776655"
+      }
+    ]
+  },
+  "stId": "10692987"
+}

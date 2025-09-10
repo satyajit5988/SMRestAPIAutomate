@@ -13,7 +13,7 @@ def test_AddNewUser():
 
 def test_UpdateNewUser():
     API_URL="https://thetestingworldapi.com/api/studentsDetails/10692976"
-    file = open("C:/Users/User/PycharmProjects/SM - RestAPIAutomate/TestData/addUserDetails.json", "r")
+    file = open("C:/Users/User/PycharmProjects/SMRestAPIAutomate/TestData/addUserDetails.json", "r")
     json_input = json.loads(file.read())
     response = requests.put(API_URL, json_input)
     print(response.text)

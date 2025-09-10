@@ -8,7 +8,7 @@ url = "https://reqres.in/api/users"
 @pytest.fixture()
 def start_exec():
     global file
-    file = open("C:/Users/User/PycharmProjects/SM - RestAPIAutomate/TestData/userdata.json", "r")
+    file = open("C:/Users/User/PycharmProjects/SMRestAPIAutomate/TestData/userdata.json", "r")
 
 @pytest.mark.smoke
 def test_create_new_user(start_exec):

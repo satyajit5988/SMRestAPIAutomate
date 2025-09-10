@@ -6,10 +6,10 @@ import requests
 
 def test_Add_Multiple_Users():
     API_URL="https://thetestingworldapi.com/api/studentsDetails"
-    file = open("C:/Users/User/PycharmProjects/SM - RestAPIAutomate/TestData/addMultipleUserDetails.json", "r")
+    file = open("C:/Users/User/PycharmProjects/SMRestAPIAutomate/TestData/addMultipleUserDetails.json", "r")
     request_json = json.loads(file.read())
 
-    wk = openpyxl.load_workbook("C:/Users/User/PycharmProjects/SM - RestAPIAutomate/TestData/userMultipleData.xlsx")
+    wk = openpyxl.load_workbook("C:/Users/User/PycharmProjects/SMRestAPIAutomate/TestData/userMultipleData.xlsx")
     sh = wk['Sheet1']
     row = sh.max_row
 

@@ -6,7 +6,7 @@ import requests
 def test_add_new_student():
     global user_id
     API_URL="https://thetestingworldapi.com/api/studentsDetails"
-    file = open("C:/Users/User/PycharmProjects/SM - RestAPIAutomate/TestData/addUserDetails.json", "r")
+    file = open("C:/Users/User/PycharmProjects/SMRestAPIAutomate/TestData/addUserDetails.json", "r")
     json_input = json.loads(file.read())
     response = requests.post(API_URL, json_input)
     user_id = jsonpath.jsonpath(response.json(), 'id')
